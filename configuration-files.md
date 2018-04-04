@@ -58,21 +58,21 @@ ckan.plugins = …….. scheming_datasets scheming_*organizations*
 The scheming_*organizations* tells CKAN that we are going to use scheming on the *organizations*. This has ckanext-scheming looking for the config line that tells it what shema to use for a **organization**.
 
 
-scheming.**organization**_schemas = ckanext.scheming:org_with_dept_id.json
+scheming.**organization**_schemas = ckanext.scheming:ckan_organization.json
 
-The above line tells ckanext-scheming that when a **organization** is edited or displayed it will use the schema defined in the file org_with_dept_id.json
+The above line tells ckanext-scheming that when a **organization** is edited or displayed it will use the schema defined in the file ckan_organization.json
 
 Explanation of the different parts: 
 ```
-scheming.organization_schemas = ckanext.scheming:org_with_dept_id.json
+scheming.organization_schemas = ckanext.scheming:ckan_organization.json
 
 scheming. -> config parameter belonging to ckanext-scheming
 organization_schemas = -> the schema is for organization and mot groups or datasets
 ckanext.scheming: => (no idea, ??)
-org_with_dept_id.json => the schema file that will be used for organizations
+ckan_organization.json => the schema file that will be used for organizations
 ```
 
-The file org_with_dept_id.json located in /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/
+The file ckan_organization.json located in /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/
 
 And  looks like this:
 ```
