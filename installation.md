@@ -1,14 +1,14 @@
 ckanext-scheming installation
 =============================
 
-This installation assumes you have followed the instructions 
-[Installing CKAN from package] (http://docs.ckan.org/en/latest/maintaining/installing/install-from-package.html)
+This installation assumes you have followed the instructions
+[Installing CKAN from package](http://docs.ckan.org/en/latest/maintaining/installing/install-from-package.html)
 
 # Install it
 
 1. Become superuser
 
-   `sudo su`    
+   `sudo su`
 
 2. Activate virtualenv
 
@@ -26,7 +26,7 @@ This installation assumes you have followed the instructions
 
    `cd ./ckanext-scheming`
 
-6. Install the requirements 
+6. Install the requirements
 
    `pip install -r /usr/lib/ckan/default/src/ckanext-scheming/requirements.txt`
 
@@ -38,7 +38,7 @@ This installation assumes you have followed the instructions
 
    `ckan.plugins = …….. scheming_datasets`
 
-We are now just going to test if the extension works. 
+We are now just going to test if the extension works.
 There are sample schemas are located in /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming and we are going to use the one named ckan_dataset.json
 
 9. To use this shema we need to set the following in the CKAN config file (production.ini)
@@ -60,7 +60,7 @@ There are sample schemas are located in /usr/lib/ckan/default/src/ckanext-schemi
 
 1. Open the schema file that defines the fields
 
-`sudo vi /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/ckan_dataset.json`
+   `sudo vi /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/ckan_dataset.json`
 
 2. Change the form_placeholder so you have something like this:
 ```
