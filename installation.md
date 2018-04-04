@@ -75,5 +75,16 @@ There are sample schemas are located in /usr/lib/ckan/default/src/ckanext-schemi
 3. Save, restart the webserver and open http://localhost/dataset/new again.
    You should now see the “I EDITED THIS…” in the Title placeholder.
 
+
+# Verify it
+
+The shema ckan_dataset.json has all the fields that are defined for a dataset by default. No new fields and all fields corresponds with default field names.
+
+Do this simple test to verify:
+
+1. Create a dataset without the ckan_dataset.json schema
+2. Create a dataset with the ckan_dataset.json schema
+3. Verify that updating fields with or without the schema has the same result.
+
 OK. So now it works. Edit the ckan_dataset.json and put it back to the way it was.
 
