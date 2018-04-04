@@ -4,6 +4,8 @@ ckanext-scheming installation
 This installation assumes you have followed the instructions 
 [Installing CKAN from package] (http://docs.ckan.org/en/latest/maintaining/installing/install-from-package.html)
 
+# Install it
+
 1. Become superuser
 
    `sudo su`    
@@ -53,4 +55,25 @@ There are sample schemas are located in /usr/lib/ckan/default/src/ckanext-schemi
 11. Log in and open the page http://localhost/dataset/new
 
    You should now see the dataset fields. Next we will try to edit them.
+
+# Test it
+
+1. Open the schema file that defines the fields
+
+`sudo vi /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/ckan_dataset.json`
+
+2. Change the form_placeholder so you have something like this:
+```
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "label": "Title",
+      "preset": "title",
+      "form_placeholder": "I EDITED THIS eg. A descriptive title"
+    },
+```
+3. Save, restart the webserver and open http://localhost/dataset/new again.
+   You should now see the “I EDITED THIS…” in the Title placeholder.
+
+OK. So now it works. Edit the ckan_dataset.json and put it back to the way it was.
 
