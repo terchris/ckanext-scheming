@@ -5,7 +5,9 @@ This installation assumes you have followed the instructions
 [Installing CKAN from package] (http://docs.ckan.org/en/latest/maintaining/installing/install-from-package.html)
 
 1. Become superuser
+`
     sudo su
+`    
 2. Activate virtualenv
     . /usr/lib/ckan/default/bin/activate
 3. Go to target install directory
