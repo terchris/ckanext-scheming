@@ -14,3 +14,11 @@ This curl does the magic:
 -d '{"all_fields": "True", "include_extras": "True", "include_users": "True"}'
 
  ```
+
+ This is another API sor displaying info about an organization
+ http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_show
+
+
+ API for displaying user info
+ http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_show
+ 
