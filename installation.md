@@ -48,11 +48,15 @@ There are sample schemas are located in /usr/lib/ckan/default/src/ckanext-schemi
     scheming.dataset_fallback = false
  ```
  
-10. Save the config file and restart webserver so that the new config file is read.
+10. It was done with root user. So set access rights to www-data
 
-   `sudo service apache2 restart`
+ `sudo service apache2 restart`
 
-11. Log in and open the page http://localhost/dataset/new
+11. Save the config file and restart webserver so that the new config file is read.
+
+   `chown -R www-data:www-data /usr/lib/ckan/`
+
+12. Log in and open the page http://localhost/dataset/new
 
    You should now see the dataset fields. Next we will try to edit them.
 
