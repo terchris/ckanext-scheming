@@ -1,159 +1,150 @@
 {
-    "scheming_version": 1,
-    "organization_type": "organization",
-    "about": "Extension of organization to include fields needed for www.smartebyernorge.no members",
-    "about_url": "http://github.com/terchris/ckanext-scheming",
-    "fields": [
-      {
-        "field_name": "title",
-        "label": "Name",
-        "validators": "ignore_missing unicode",
-        "form_snippet": "large_text.html",
-        "form_attrs": {"data-module": "slug-preview-target"},
-        "form_placeholder": "My Organization.-"
-      },
-      {
-        "field_name": "name",
-        "label": "URL",
-        "validators": "not_empty unicode name_validator group_name_validator",
-        "form_snippet": "slug.html",
-        "form_placeholder": "my-organization"
-      },
-      {
-        "field_name": "slogan",
-        "label": "Slogan",
-        "form_placeholder": "eg. Best pizza in town",
-        "required": true
-      },
-      {
-        "field_name": "website",
-        "label": "Website",
-        "form_placeholder": "http://example.com",
-        "display_snippet": "link.html"
-      },
-      {
-        "field_name": "organization_type",
-        "label": "Organization type",
-        "help_text": "Select the organization type that best descibes the organization",
-        "help_inline": true,
-        "required": true,
-        "preset": "select",
-        "choices": [
-          {
-            "value": "research",
-            "label": "FoU"
-          },
-          {
-            "value": "public",
-            "label": "Offentlig"
-          },
-          {
-            "value": "startup",
-            "label": "Startup"
-          },
-          {
-            "value": "private",
-            "label": "Privat"
-          },
-          {
-            "value": "civil_society",
-            "label": "Sivilsamfunn"
-          }
-        ]
-      },
-      {
-        "field_name": "description",
-        "label": "Description",
-        "form_snippet": "markdown.html",
-        "form_placeholder": "A little information about my organization..."
-      },
-      {
-        "field_name": "image_url",
-        "label": "Image URL",
-        "form_placeholder": "http://example.com/my-image.jpg"
-      },
-      {
-        "field_name": "member",
-        "label": "Member",
-        "help_text": "The organization is a member of www.smartebyernorge.no/nettverk",
-        "help_inline": true,
-        "required": true,
-        "preset": "select",
-        "choices": [
-          {
-            "value": "yes",
-            "label": "Yes"
-          },
-          {
-            "value": "no",
-            "label": "No"
-          }
-        ]
-      },
-      {
-        "field_name": "organization_number",
-        "label": "Organization number",
-        "help_text": "Norwegian 9 digit number from brreg.no",
-        "help_inline": true,
-        "validators": "ignore_missing int_validator",
-        "form_placeholder": "971524960"
-      },
-      {
-        "field_name": "main_adddress",
-        "label": "Main address",
-        "help_text": "If we where to meet you in the main office",
-        "help_inline": true,
-        "required": true,
-        "form_placeholder": "Karl Johans gate 22, 0026 Oslo,Norge"
-      },
-      {
-        "field_name": "contact_name",
-        "label": "Contact name",
-        "help_text": "Name of the contact for the organization",
-        "help_inline": true,
-        "form_placeholder": "Ola Nordmann"
-      },
-      {
-        "field_name": "contact_phone",
-        "label": "Contact phone",
-        "help_text": "Phone to the contact for the organization",
-        "help_inline": true,
-        "validators": "ignore_missing int_validator",
-        "form_placeholder": "23313050"
-      },
-      {
-        "field_name": "contact_email",
-        "label": "Contact email",
-        "help_text": "Email to the contact for the organization",
-        "help_inline": true,
-        "form_placeholder": "postmottak@stortinget.no",
-        "display_snippet": "email.html"
-      },
-      {
-        "field_name": "organisasjonsnummer",
-        "label": "Organisasjonsnummer",
-        "form_placeholder": "123456789",
-        "help_text": "ID from www.brreg.no for the organization",
-        "help_inline": true,
-        "validators": "ignore_missing int_validator"                
-      },
-      {
-        "field_name": "employees",
-        "label": "Employees",
-        "form_placeholder": "json formatted field",
-        "help_text": "Employees in the the organization",
-        "help_inline": true
-      }
-      ,
-      {
-        "field_name": "insightly_id",
-        "label": "insightly_id",
-        "form_placeholder": "123456789",
-        "help_text": "ID from CRM system insightly.com for the organization",
-        "help_inline": true,
-        "validators": "ignore_missing int_validator"
-      }
+  "scheming_version": 1,
+  "organization_type": "organization",
+  "about": "Extension of organization to include fields needed for www.smartebyernorge.no members",
+  "about_url": "http://github.com/terchris/ckanext-scheming",
+  "fields": [
+    {
+      "field_name": "title",
+      "label": "Name",
+      "validators": "ignore_missing unicode",
+      "form_snippet": "large_text.html",
+      "form_attrs": {"data-module": "slug-preview-target"},
+      "form_placeholder": "My Organization.-"
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "validators": "not_empty unicode name_validator group_name_validator",
+      "form_snippet": "slug.html",
+      "form_placeholder": "my-organization"
+    },
+    {
+      "field_name": "slogan",
+      "label": "Slogan",
+      "form_placeholder": "eg. Best pizza in town",
+      "required": true
+    },
+    {
+      "field_name": "website",
+      "label": "Website",
+      "form_placeholder": "http://example.com",
+      "display_snippet": "link.html"
+    },
+    {
+      "field_name": "organization_type",
+      "label": "Organization type",
+      "help_text": "Select the organization type that best descibes the organization",
+      "help_inline": true,
+      "required": true,
+      "preset": "select",
+      "choices": [
+        {
+          "value": "research",
+          "label": "FoU"
+        },
+        {
+          "value": "public",
+          "label": "Offentlig"
+        },
+        {
+          "value": "startup",
+          "label": "Startup"
+        },
+        {
+          "value": "private",
+          "label": "Privat"
+        },
+        {
+          "value": "civil_society",
+          "label": "Sivilsamfunn"
+        }
+      ]
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "A little information about my organization..."
+    },
+    {
+      "field_name": "image_url",
+      "label": "Image URL",
+      "form_placeholder": "http://example.com/my-image.jpg"
+    },
+    {
+      "field_name": "member",
+      "label": "Member",
+      "help_text": "The organization is a member of www.smartebyernorge.no/nettverk",
+      "help_inline": true,
+      "required": true,
+      "preset": "select",
+      "choices": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "field_name": "organization_number",
+      "label": "Organization number",
+      "help_text": "Norwegian 9 digit number from brreg.no",
+      "help_inline": true,
+      "validators": "ignore_missing int_validator",
+      "form_placeholder": "971524960"
+    },
+    {
+      "field_name": "main_adddress",
+      "label": "Main address",
+      "help_text": "If we where to meet you in the main office",
+      "help_inline": true,
+      "required": true,
+      "form_placeholder": "Karl Johans gate 22, 0026 Oslo,Norge"
+    },
+    {
+      "field_name": "phone",
+      "label": "Organization phone",
+      "help_text": "Main phone for the organization",
+      "help_inline": true,
+      "validators": "ignore_missing int_validator",
+      "form_placeholder": "23313050"
+    },
+    {
+      "field_name": "contact_name",
+      "label": "Contact name",
+      "help_text": "Name of the contact for the organization",
+      "help_inline": true,
+      "form_placeholder": "Ola Nordmann"
+    },
+    {
+      "field_name": "employees",
+      "label": "Employees",
+      "form_placeholder": "json formatted field",
+      "form_snippet": "markdown.html",
+      "help_text": "Employees in the the organization",
+      "help_inline": true
+    }
+    ,
+    {
+      "field_name": "insightly_id",
+      "label": "insightly_id",
+      "form_placeholder": "123456789",
+      "help_text": "ID from CRM system insightly.com for the organization",
+      "help_inline": true,
+      "validators": "ignore_missing int_validator"
+    },
+    {
+      "field_name": "insightly_tags",
+      "label": "Insightly tags",
+      "form_placeholder": "-Mobilitet, SmartCity",
+      "help_text": "Comma separated list of tags",
+      "help_inline": true
+    }
 
-    ]
-  }
-  
+  ]
+}

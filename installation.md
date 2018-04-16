@@ -92,3 +92,12 @@ Do this simple test to verify:
 
 OK. So now it works. Edit the ckan_dataset.json and put it back to the way it was.
 
+
+
+# Notes
+
+When you use the API to read the object you will get the field names in the schema. as keypairs.
+When you remove the field definition:
+- The fields are still there
+- when using the API you will see a key called "extras". In this arrayyou will find the filelds like this
+   {key:myemail, value:"myemail@somedomain.com"}
