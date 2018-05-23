@@ -122,16 +122,11 @@
       "form_placeholder": "Ola Nordmann"
     },
     {
-      "field_name": "resourceid_employees",
-      "label": "ResourceID dataset with employees",
-      "help_text": "The dataset containing employees. Eg: 2dfb69b8-a9cc-47f2-a894-803001703737",
-      "help_inline": true
-    },
-    {
-      "field_name": "member_tags",
-      "label": "Member tags",
-      "form_placeholder": "comma separated list",
-      "help_text": "Comma separated. Eg: tag1, tag2, tag3",
+      "field_name": "employees",
+      "label": "Employees",
+      "form_placeholder": "json formatted field",
+      "form_snippet": "markdown.html",
+      "help_text": "Employees in the the organization",
       "help_inline": true
     }
     ,
