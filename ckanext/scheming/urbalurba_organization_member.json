@@ -103,7 +103,6 @@
       "label": "Main address",
       "help_text": "If we where to meet you in the main office",
       "help_inline": true,
-      "required": true,
       "form_placeholder": "Karl Johans gate 22, 0026 Oslo,Norge"
     },
     {
