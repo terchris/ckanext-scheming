@@ -110,7 +110,6 @@
       "label": "Organization phone",
       "help_text": "Main phone for the organization",
       "help_inline": true,
-      "validators": "ignore_missing int_validator",
       "form_placeholder": "23313050"
     },
     {
@@ -119,6 +118,27 @@
       "help_text": "Name of the contact for the organization",
       "help_inline": true,
       "form_placeholder": "Ola Nordmann"
+    },
+    {
+      "field_name": "contact_title",
+      "label": "Contact title",
+      "help_text": "Contact person title",
+      "help_inline": true,
+      "form_placeholder": "Smartbysjef"
+    },
+    {
+      "field_name": "contact_email",
+      "label": "Contact email",
+      "help_text": "Email to the contact person",
+      "help_inline": true,
+      "form_placeholder": "smartby.sjef@stortinget.no"
+    },
+    {
+      "field_name": "contact_mobile",
+      "label": "Contact mobile",
+      "help_text": "Mobile phone to contact person",
+      "help_inline": true,
+      "form_placeholder": "123456789"
     },
     {
       "field_name": "resourceid_employees",
@@ -135,6 +155,14 @@
     }
     ,
     {
+      "field_name": "segment",
+      "label": "Segments",
+      "form_placeholder": "comma separated list",
+      "help_text": "Comma separated. Eg: segment1, segment2, segment3",
+      "help_inline": true
+    }
+    ,
+    {
       "field_name": "insightly_id",
       "label": "insightly_id",
       "form_placeholder": "123456789",
@@ -147,6 +175,13 @@
       "label": "Insightly tags",
       "form_placeholder": "-Mobilitet, SmartCity",
       "help_text": "Comma separated list of tags",
+      "help_inline": true
+    },
+    {
+      "field_name": "sustainable_development_goals",
+      "label": "Sustainable Development Goals",
+      "form_placeholder": "1, 5, 7",
+      "help_text": "Comma separated list of the numbers",
       "help_inline": true
     }
 
