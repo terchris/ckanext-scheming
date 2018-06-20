@@ -183,6 +183,13 @@
       "form_placeholder": "1, 5, 7",
       "help_text": "Comma separated list of the numbers",
       "help_inline": true
+    },
+    {
+      "field_name": "employee_resource_id",
+      "label": "employee resource id",
+      "form_placeholder": "",
+      "help_text": "ID to the dataset containing the employees in the company",
+      "help_inline": true
     }
 
   ]
