@@ -22,6 +22,10 @@ This installation assumes you have followed the instructions
 
    `pip install -e "git+https://github.com/ckan/ckanext-scheming.git#egg=ckanext-scheming"`
 
+For the changes in org for Urbalurba do
+   `pip install -e "git+https://github.com/terchris/ckanext-scheming.git#egg=ckanext-scheming"`
+
+
 5. Go to the ckanext-scheming dir
 
    `cd ./ckanext-scheming`
