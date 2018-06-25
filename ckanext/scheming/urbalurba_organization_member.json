@@ -141,12 +141,6 @@
       "form_placeholder": "123456789"
     },
     {
-      "field_name": "resourceid_employees",
-      "label": "ResourceID dataset with employees",
-      "help_text": "The dataset containing employees. Eg: 2dfb69b8-a9cc-47f2-a894-803001703737",
-      "help_inline": true
-    },
-    {
       "field_name": "member_tags",
       "label": "Member tags",
       "form_placeholder": "comma separated list",
