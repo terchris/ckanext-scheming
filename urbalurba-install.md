@@ -33,4 +33,10 @@ paster db init -c /etc/ckan/default/production.ini
 paster user add terchris  fullname="Terje Christensen" email=terje@smartebyernorge.no -c /etc/ckan/default/production.ini
 paster sysadmin add terchris -c /etc/ckan/default/production.ini
 
+
+
+Do these as well
+sudo service apache2 restart
+sudo service nginx restart
+
 the API key is changed every time you do this. so remember to update it in scripts
