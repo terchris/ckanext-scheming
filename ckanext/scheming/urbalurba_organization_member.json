@@ -44,20 +44,28 @@
           "label": "FoU"
         },
         {
-          "value": "public",
-          "label": "Offentlig"
+          "value": "municipality",
+          "label": "Kommune"
         },
         {
-          "value": "startup",
-          "label": "Startup"
+          "value": "academia",
+          "label": "Academia"
         },
         {
           "value": "private",
           "label": "Privat"
         },
         {
-          "value": "civil_society",
-          "label": "Sivilsamfunn"
+          "value": "association",
+          "label": "association"
+        },
+        {
+          "value": "government",
+          "label": "government"
+        },
+        {
+          "value": "civil_society_ngo",
+          "label": "Sivilsamfunn og NGO"
         }
       ]
     },
