@@ -40,3 +40,15 @@ sudo service apache2 restart
 sudo service nginx restart
 
 the API key is changed every time you do this. so remember to update it in scripts
+
+# Update 30oct
+
+cd /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming
+sudo cp urbalurba_organization_member.json urbalurba_organization_member.json-backup30oct
+sudo vi new-urbalurba.json
+pasted the content of urbalurba_organization_member.json in this file
+sudo chown www-data:www-data new-urbalurba.json
+sudo rm urbalurba_organization_member.json
+sudo mv new-urbalurba.json urbalurba_organization_member.json
+sudo service apache2 restart
+sudo service nginx restart
