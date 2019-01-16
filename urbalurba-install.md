@@ -52,3 +52,19 @@ sudo rm urbalurba_organization_member.json
 sudo mv new-urbalurba.json urbalurba_organization_member.json
 sudo service apache2 restart
 sudo service nginx restart
+
+
+# update 16Jan19
+
+Added two new fields locationData and urbalurbaData to the org scheme
+This is how to update after logging in to the server running ckan
+
+cd /usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming
+sudo cp urbalurba_organization_member.json urbalurba_organization_member.json-backup16jan19
+sudo vi new-urbalurba.json
+pasted the content of urbalurba_organization_member.json in this file
+sudo chown www-data:www-data new-urbalurba.json
+sudo rm urbalurba_organization_member.json
+sudo mv new-urbalurba.json urbalurba_organization_member.json
+sudo service apache2 restart
+sudo service nginx restart
